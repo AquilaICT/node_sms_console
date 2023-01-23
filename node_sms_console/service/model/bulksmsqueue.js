@@ -1,6 +1,7 @@
 const { Model } = require('sequelize');
+
 module.exports = (sequelize, DataTypes) => {
-  class FooBar extends Model {
+  class BulkSMSQueue extends Model {
     /**
      * Helper method for defining associations.
      * This method is not a part of DataTypes lifecycle.
@@ -8,9 +9,10 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      console.log(models);
     }
   }
-  FooBar.init(
+  BulkSMSQueue.init(
     {
       id: {
         type: DataTypes.INTEGER,
@@ -42,8 +44,8 @@ module.exports = (sequelize, DataTypes) => {
         allowNull: false,
       },
       msg: {
-         type: DataTypes.STRING, 
-         allowNull: false, 
+        type: DataTypes.STRING,
+        allowNull: false,
       },
     },
     {
@@ -54,5 +56,5 @@ module.exports = (sequelize, DataTypes) => {
       underscore: true,
     },
   );
-  return FooBar;
+  return BulkSMSQueue;
 };

@@ -7,6 +7,14 @@ export const db = new Sequelize(config.dbName, config.dbUsername, config.dbPassw
   dialect: 'mysql',
 });
 
+try {
+  await sequelize.authenticate();
+  console.log('Connection has been established successfully.');
+} catch (error) {
+  console.error('Unable to connect to the database:', error);
+}
+
+
 export async function createBulkSMSQueue(
   bid,
   status,
@@ -16,7 +24,7 @@ export async function createBulkSMSQueue(
   jobId,
   msg,
 ) {
-  await axios.post(`${config.STORAGE_RESTFULL_API}/job/bulk/queue`, {
+  BulkSMSQueue. {
     bid,
     status,
     phone,

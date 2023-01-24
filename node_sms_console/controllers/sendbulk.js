@@ -1,4 +1,3 @@
-import events from 'events';
 import axios from 'axios'
 import config from '../config.js';
 import {

@@ -1,9 +1,9 @@
 export default {
   dbHost: 'localhost',
   dbPort: 3306,
-  dbName: 'jasmin_alternating',
-  dbUsername: 'bas',
-  dbPassword: 'toor',
+  dbName: 'jasmin',
+  dbUsername: 'root',
+  dbPassword: '',
 
   port: process.env.PORT || 8000,
   JASMINE_RESTFULL_API: 'http://127.0.0.1:8080/secure',

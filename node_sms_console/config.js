@@ -5,7 +5,7 @@ export default {
   dbUsername: 'root',
   dbPassword: '',
 
-  port: process.env.PORT || 8000,
+  port: process.env.PORT || 9009,
   JASMINE_RESTFULL_API: 'http://127.0.0.1:8080/secure',
   GEEZ_RESTFULL_API: 'https://api.geezsms.com/api',
   STORAGE_RESTFULL_API: 'http://localhost:8002/api',
@@ -21,5 +21,5 @@ export default {
   from: 'IRC',
   token: 'N7tu3Iiamcv4B4X1XNRxBMdoVJvkEx3H',
   backendHost: 'https://api.geezsms.com',
-  jwt: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLmdlZXpzbXMuY29tXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjczOTQwMTI4LCJleHAiOjE2NzM5NjE3MjgsIm5iZiI6MTY3Mzk0MDEyOCwianRpIjoiMmxFR1dmaEhYMnc2VExoYiIsInN1YiI6MTM4LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.VSLGtlYtoobYaL_2YrSh2L8xIONFctsdrP57FjS91rU',
+  jwt: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLmdlZXpzbXMuY29tXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjc0NTQ1MTkzLCJleHAiOjE2NzQ1NjY3OTMsIm5iZiI6MTY3NDU0NTE5MywianRpIjoicm9rMmlKUWViWjdNTUl0WCIsInN1YiI6MTM4LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.atgS86D90v2hRESYlmKD4PoW5QQXIbO8b6P-fWw7EYQ',
 };

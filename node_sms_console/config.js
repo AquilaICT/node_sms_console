@@ -1,11 +1,11 @@
 export default {
   dbHost: 'localhost',
   dbPort: 3306,
-  dbName: 'jasmin',
-  dbUsername: 'root',
-  dbPassword: '',
+  dbName: 'jasmin_alternating',
+  dbUsername: 'bas',
+  dbPassword: 'toor',
 
-  port: process.env.PORT || 8000,
+  port: process.env.PORT || 9009,
   JASMINE_RESTFULL_API: 'http://127.0.0.1:8080/secure',
   GEEZ_RESTFULL_API: 'https://api.geezsms.com/api',
   STORAGE_RESTFULL_API: 'http://localhost:8002/api',

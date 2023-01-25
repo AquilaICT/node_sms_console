@@ -46,7 +46,7 @@ function sendSMS() {
 async function send(contacts, index) {
     try {
         console.log('index', index);
-        const phones = contacts.slice(index, Math.min(index + chunck, total + 1));
+        const phones = contacts.slice(index, Math.min(index + chunck, total + 1)).map(e => e.phone_number);
         console.log('phones: ', phones.length);
 
         const batchId = await sendBulk(buildRequestObj(phones, config.msg), config.usr, config.pwd, config.from, index);
@@ -59,7 +59,7 @@ async function send(contacts, index) {
                 queueId: 'msgID',
                 batchId,
                 bid: index,
-                phone: phone.phone_number,
+                phone: phone,
                 status: 'trying',
                 description: '',
                 jobId: config.job_name,

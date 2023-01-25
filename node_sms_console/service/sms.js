@@ -1,8 +1,12 @@
+import config  from '../config.js';
+import axios from 'axios';
+
 export async function sendBulk(
     requestObj,
     usr,
     pwd,
-    from
+    from,
+    bid
 ) {
     let data = {};
 

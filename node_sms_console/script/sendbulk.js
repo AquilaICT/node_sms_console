@@ -49,19 +49,21 @@ async function send(contacts, index) {
         const phones = contacts.slice(index, Math.min(index + chunck, total + 1));
         console.log('phones: ', phones.length);
 
-        const batchId = sendBulk(buildRequestObj(phones, config.msg), config.usr, config.pwd, config.from);
+        const batchId = await sendBulk(buildRequestObj(phones, config.msg), config.usr, config.pwd, config.from, index);
         console.log('batchId', batchId);
         // eslint-disable-next-line no-restricted-syntax
         for (const phone of phones) {
             // eslint-disable-next-line no-await-in-loop
+            console.log(phone)
             await bulkSMSService.createBulkSMSQueue({
                 queueId: 'msgID',
                 batchId,
                 bid: index,
-                phone,
+                phone: phone.phone_number,
                 status: 'trying',
                 description: '',
-                content: config.msg,
+                jobId: config.job_name,
+                msg: config.msg,
             });
         }
 

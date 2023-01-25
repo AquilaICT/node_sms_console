@@ -4,6 +4,8 @@ import {
     execSync
 } from "child_process";
 import pathToChecker from '../env.js';
+import * as bulkSMSService from '../service/bulksmsqueue.service.js';
+
 
 export async function errorBatch(req, res) {
     console.log("logged errorBatch");
@@ -87,15 +89,15 @@ export async function successfulBatch(req, res) {
 
         let output = execSync(`python3 ${pathToChecker}check.py -i ${msgID}`);
         output = JSON.parse(output);
-        // Db.update('queue', {
-        //     queueId: msgID,
-        //     batchId: batchId,
-        //     bid: req.params.bid,
-        //     phone: confirm.to,
-        //     status: (output.found && output.success) ? "success" : "failed",
-        //     description: confirm.statusText,
-        //     content: confirm.batchId
-        // });
+        bulkSMSService.updateBulkSMSQueue({
+            queueId: msgID,
+            batchId: batchId,
+            bid: req.params.bid,
+            phone: confirm.to,
+            status: (output.found && output.success) ? "success" : "failed",
+            description: confirm.statusText,
+            content: confirm.batchId
+        });
 
         if (output.down)
             console.log('Error Occured', {

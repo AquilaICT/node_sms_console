@@ -1,4 +1,4 @@
-import config  from '../config.js';
+import config from '../config.js';
 import axios from 'axios';
 
 export async function sendBulk(
@@ -44,7 +44,7 @@ export async function sendBulk(
         console.log(error.response.headers);
         console.log(error.response.data);
         console.log(error.response.status);
-        res.status(200).json({
+        console.table({
             error: true,
             msg: error
         })
@@ -52,8 +52,8 @@ export async function sendBulk(
 }
 
 export function buildRequestObj(to, content) {
-    return {
+    return [{
         to: to,
         content: content
-    }
+    }]
 }

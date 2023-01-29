@@ -34,6 +34,8 @@ export async function sendBulk(
                     password: pwd
                 }
             });
+        console.log(jasmineRes.data);
+
         let batchId = jasmineRes.data.data.batchId;
 
         console.log(batchId);

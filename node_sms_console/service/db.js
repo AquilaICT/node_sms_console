@@ -5,9 +5,7 @@ import Sequelize from 'sequelize';
 export const db = new Sequelize(config.dbName, config.dbUsername, config.dbPassword, {
   host: config.dbHost,
   dialect: 'mysql',
-  "define": {
-    "underscored": true
-  }
+ 
 });
 
 export const setup = async () => {

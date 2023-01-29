@@ -43,8 +43,11 @@ export const BulkSMSQueue =
     },
   }, {
     // options
+
     db,
     modelName: 'BulkSMSQueue',
     tableName: 'bulk_s_m_s_queues',
-    underscore: true,
+    createdAt: 'created_at',
+    updatedAt: 'updated_at',
+
   });

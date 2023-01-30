@@ -90,10 +90,11 @@ export async function successfulBatch(req, res) {
         let output = execSync(`python3 ${pathToChecker}check.py -i ${msgID}`);
         output = JSON.parse(output);
         console.log("output:- ", output);
-
+        //TODO: currently only support static msg
         await bulkSMSService.updateBulkSMSQueue({
             queueId: msgID,
             batchId: batchId,
+            msg: config.msg,
             bid: req.params.bid,
             phone: confirm.to,
             status: (output.found && output.success) ? "success" : "failed",

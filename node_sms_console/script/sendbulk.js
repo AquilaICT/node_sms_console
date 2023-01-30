@@ -22,7 +22,7 @@ let total = 0;
 let progress = config.progress;
 let loading = true;
 let done = false;
-const chunck = 5;
+const chunck = 25;
 
 function sendSMS() {
     console.time('sendSMS');

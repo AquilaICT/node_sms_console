@@ -46,7 +46,7 @@ export async function updateBulkSMSQueue({
       queueId: batchId,
       phone,
       msg,
-
+      status: "trying"
     },
     limit: 1
   });

@@ -39,6 +39,7 @@ export async function updateBulkSMSQueue(
     description,
     jobId,
     msg,
+    queueId,
   }, {
     where: {
       queueId: batchId,

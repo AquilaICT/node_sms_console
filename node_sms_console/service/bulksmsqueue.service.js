@@ -33,6 +33,7 @@ export async function updateBulkSMSQueue(
   jobId,
   msg,
 ) {
+  console.log('updateBulkSMSQueue:-', batchId);
   await BulkSMSQueue.update({
     bid,
     status,

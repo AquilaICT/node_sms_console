@@ -89,6 +89,8 @@ export async function successfulBatch(req, res) {
 
         let output = execSync(`python3 ${pathToChecker}check.py -i ${msgID}`);
         output = JSON.parse(output);
+        console.log("output:- ", output);
+
         await bulkSMSService.updateBulkSMSQueue({
             queueId: msgID,
             batchId: batchId,

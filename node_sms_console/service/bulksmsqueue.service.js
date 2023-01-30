@@ -1,20 +1,23 @@
-import { BulkSMSQueue } from './model/bulksmsqueue.js'
+import {
+  BulkSMSQueue
+} from './model/bulksmsqueue.js'
 
 export async function createBulkSMSQueue({
   bid,
+  batchId,
   status,
   phone,
   description,
-  queueId,
+
   jobId,
   msg,
-}={}) {
+} = {}) {
   await BulkSMSQueue.create({
     bid,
     status,
     phone,
     description,
-    queueId,
+    queueId: batchId,
     jobId,
     msg,
   });
@@ -22,6 +25,7 @@ export async function createBulkSMSQueue({
 
 export async function updateBulkSMSQueue(
   bid,
+  batchId,
   status,
   phone,
   description,
@@ -37,7 +41,7 @@ export async function updateBulkSMSQueue(
     msg,
   }, {
     where: {
-      queueId,
+      queueId: batchId,
       phone,
       msg
     },

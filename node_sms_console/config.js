@@ -9,7 +9,7 @@ export default {
   JASMINE_RESTFULL_API: 'http://127.0.0.1:8080/secure',
   GEEZ_RESTFULL_API: 'https://api.geezsms.com/api',
   STORAGE_RESTFULL_API: 'http://localhost:8002/api',
-  job_name: "TestA2pBULKTEST308-2022-29-01",
+  job_name: "TestA2pBULKTEST308-2022-30-01",
   group_id: 'BULKTEST308',
   progress: 0,
   msg: "Qawkaaro \nPorkiraame Raatunatte koro hxaseesay pana koro kollisay mi'aadhe noosi Qaluntettay gharssamti /nAhxkkadhdhekka a hayamtenku!\nKuyyanko K'aa'iththitona kallapte saathe 7:20 - 7:40 pana kuyyanko lunkonna  kallapte saathe 7:20 - 7:40 Raatune EF EM Jinkattay 87.8 pana 90.7 inti hola/hela saarppu",

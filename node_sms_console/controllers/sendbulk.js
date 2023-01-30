@@ -111,7 +111,6 @@ export async function successfulBatch(req, res) {
                 phone: confirm.to,
                 content: confirm.batchId
             });
-        console.log(response);
         res.end("ACK/Jasmin")
 
     } catch (error) {

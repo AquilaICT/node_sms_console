@@ -32,7 +32,7 @@ export async function updateBulkSMSQueue({
   queueId,
   jobId,
   msg,
-}={}) {
+} = {}) {
   console.log('updateBulkSMSQueue:-', batchId);
   await BulkSMSQueue.update({
     bid,
@@ -45,7 +45,9 @@ export async function updateBulkSMSQueue({
     where: {
       queueId: batchId,
       phone,
-      msg
+      msg,
+
     },
+    limit: 1
   });
 }

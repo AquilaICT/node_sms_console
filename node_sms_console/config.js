@@ -12,7 +12,7 @@ export default {
   job_name: "A2pBULK_DERASHE_IRC_01-2022-31-01",
   group_id: 'DERASHE_IRC_01',
   progress: 0,
-  msg: "Ajaylaa \nPirokiraameta raatoneta ahellaa shashakka Isho a kollissampateeta aafaa Xonso \nToollaaye Ihhalaatin \nAwta  Piisa Lankayya Etaa teykanta 3:40-4:00, Palawwa kalpta Etaa12:20-12:40 Arpaminji \nEffi Emmeeta 90.9 Olliyyi. \nAkka ishin kapannin tarpenin \nHellaa poraa oppan kahadan ka kolladan iharmisamte",
+  msg: "Kollila \nIntansasilanne kolila dhikila rationetat \nmedhas kap dhirayyittaten \nHin lemma kodhiyanno Heehemdhatene \nHelpa mitt makisagno uldhat 1:20-1:40 sampata kalap 5:20-5:40  FM 90.9 heket Arpaminich’et \nIyya inn kap intarp \nMedhdha tanawile keyyatan pana iyya inkollinan senusisa",
   billing_id: 397,
   user_id: 138,
   shortcode_id: 22,

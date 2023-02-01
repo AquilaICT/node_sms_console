@@ -77,7 +77,6 @@ export async function errorBatch(req, res) {
 
 export async function successfulBatch(req, res) {
     console.log("logged successfulBatch");
-    await delay(1000)
     try {
         let confirm = req.query;
         let batchId = confirm.batchId;

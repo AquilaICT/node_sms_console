@@ -12,7 +12,7 @@ export default {
   job_name: "A2pBULK_DERASHE_IRC_test-2023-06-13",
   group_id: 'DERASHE_IRC_test',
   progress: 0,
-  msg: "Kollila \nIntansasilanne kolila dhikila rationetat \nmedhas kap dhirayyittaten \nHin lemma kodhiyanno Heehemdhatene \nHelpa mitt makisagno uldhat 1:20-1:40 sampata kalap 5:20-5:40  FM 90.9 heket \nArpaminich’et \nIyya inn kap intarp \n"Medhdha tanawile keyyatan pana iyya inkollinan senusisa"",
+  msg: 'Kollila \nIntansasilanne kolila dhikila rationetat \nmedhas kap dhirayyittaten \nHin lemma kodhiyanno Heehemdhatene \nHelpa mitt makisagno uldhat 1:20-1:40 sampata kalap 5:20-5:40  FM 90.9 heket \nArpaminich’et \nIyya inn kap intarp \n"Medhdha tanawile keyyatan pana iyya inkollinan senusisa"',
   billing_id: 397,
   user_id: 138,
   shortcode_id: 22,

@@ -9,7 +9,7 @@ export default {
   JASMINE_RESTFULL_API: 'http://127.0.0.1:8080/secure',
   GEEZ_RESTFULL_API: 'https://api.geezsms.com/api',
   STORAGE_RESTFULL_API: 'http://localhost:8002/api',
-  job_name: "A2pBULK_ALLE-2023-06-02",
+  job_name: "A2pBULK_ALLE-2023-06-13",
   group_id: 'ALLE',
   progress: 0,
   msg: "Qawkaaro \nPorkiraame Raatunatte koro hxaseesay pana koro kollisay mi'aadhe noosi Qaluntettay \ngharssamti \nAhxkkadhdhekka a hayamtenku! \nKuyyanko K'aa'iththitona kallapte saathe 7:20 - 7:40 pana kuyyanko lunkonna  kallapte \nsaathe 7:20 - 7:40 Raatune EF EM Jinkattay 87.8 pana 90.7 \ninti hola/hela saarppu",
@@ -21,5 +21,5 @@ export default {
   from: 'IRC',
   token: 'N7tu3Iiamcv4B4X1XNRxBMdoVJvkEx3H',
   backendHost: 'https://api.geezsms.com',
-  jwt: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLmdlZXpzbXMuY29tXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjc1Njg5NjU0LCJleHAiOjE2NzU3MTEyNTQsIm5iZiI6MTY3NTY4OTY1NCwianRpIjoiZGJhdVdSY3NHdHhLdUdiSyIsInN1YiI6MTM4LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.MuWVo5bYsR0f82DOKq-d-cOO7bM31nav61sp4654oTI',
+  jwt: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLmdlZXpzbXMuY29tXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjc2Mjc0NDQ0LCJleHAiOjE2NzYyOTYwNDQsIm5iZiI6MTY3NjI3NDQ0NCwianRpIjoiNHdWbmwwWTh4MXBkTlVnUCIsInN1YiI6MTM4LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.GhkZ9gWh0Xwx8d4_HBNcLqwhvPSlEvL0ZXwKB-CkbUI',
 };

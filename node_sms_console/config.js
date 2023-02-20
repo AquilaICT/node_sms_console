@@ -9,7 +9,7 @@ export default {
   JASMINE_RESTFULL_API: 'http://127.0.0.1:8080/secure',
   GEEZ_RESTFULL_API: 'https://api.geezsms.com/api',
   STORAGE_RESTFULL_API: 'http://localhost:8002/api',
-  job_name: "A2pBULK_KONSO_IRC-2023-06-13",
+  job_name: "A2pBULK_KONSO_IRC-2023-02-20",
   group_id: 'KONSO_IRC',
   progress: 0,
   msg: "Ajaylaa \nPirokiraameta raatoneta ahellaa shashakka Isho a kollissampateeta aafaa Xonso \nToollaaye Ihhalaatin \nAwta  Piisa Lankayya Etaa teykanta 3:40-4:00, Palawwa kalpta Etaa12:20-12:40 Arpaminji \nEffi Emmeeta 90.9 Olliyyi. \nAkka ishin kapannin tarpenin \nHellaa poraa oppan kahadan ka kolladan  iharmisamte",
@@ -21,5 +21,5 @@ export default {
   from: 'IRC',
   token: 'N7tu3Iiamcv4B4X1XNRxBMdoVJvkEx3H',
   backendHost: 'https://api.geezsms.com',
-  jwt: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLmdlZXpzbXMuY29tXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjc2Mjc0NDQ0LCJleHAiOjE2NzYyOTYwNDQsIm5iZiI6MTY3NjI3NDQ0NCwianRpIjoiNHdWbmwwWTh4MXBkTlVnUCIsInN1YiI6MTM4LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.GhkZ9gWh0Xwx8d4_HBNcLqwhvPSlEvL0ZXwKB-CkbUI',
+  jwt: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLmdlZXpzbXMuY29tXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjc2ODc2MTgyLCJleHAiOjE2NzY4OTc3ODIsIm5iZiI6MTY3Njg3NjE4MiwianRpIjoiV3BzZHZVblRqelpuUDlLSSIsInN1YiI6MTM4LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.sjBhznNVpHhqQTrS0AEjwgww1qgATnyPczltl_EpnCE',
 };

@@ -10,7 +10,7 @@ export default {
   GEEZ_RESTFULL_API: 'https://api.geezsms.com/api',
   STORAGE_RESTFULL_API: 'http://localhost:8002/api',
   job_name: "A2pBULK_test_bulk_2023-02-21",
-  group_id: 'BULKTEST1233',
+  group_id: 'bulkTest421',
   progress: 0,
   msg: "Ajaylaa \nPirokiraameta raatoneta ahellaa shashakka Isho a kollissampateeta aafaa Xonso \nToollaaye Ihhalaatin \nAwta  Piisa Lankayya Etaa teykanta 3:40-4:00, Palawwa kalpta Etaa12:20-12:40 Arpaminji \nEffi Emmeeta 90.9 Olliyyi. \nAkka ishin kapannin tarpenin \nHellaa poraa oppan kahadan ka kolladan  iharmisamte",
   billing_id: 397,

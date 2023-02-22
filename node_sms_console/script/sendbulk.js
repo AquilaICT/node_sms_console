@@ -4,7 +4,7 @@
 import {
     setTimeout
 } from 'timers/promises';
-import config  from '../config.js';
+import config from '../config.js';
 
 import {
     sendBulk,
@@ -31,13 +31,13 @@ function sendSMS() {
 
             contacts = data.data.data;
             total = contacts.length;
-            loading = true;
-            done = false;
 
             console.log(`total of ${total} contacts fetched`);
             send(contacts, progress);
         }).catch((error) => {
             console.log('error', error);
+            console.log(error.response.data);
+
         });
 }
 
@@ -73,8 +73,6 @@ async function send(contacts, index) {
 
         console.timeEnd('sendSMS');
         console.log({
-            loading: false,
-            done: true,
             success: true,
         });
     } catch (error) {
@@ -86,9 +84,9 @@ async function send(contacts, index) {
         });
     }
 }
-try{
-sendSMS();
-}catch(error){
+try {
+    sendSMS();
+} catch (error) {
     console.log(error);
     console.log(error.response.data);
 }

@@ -86,5 +86,9 @@ async function send(contacts, index) {
         });
     }
 }
-
+try{
 sendSMS();
+}catch(error){
+    console.log(error);
+    console.log(error.response.data);
+}

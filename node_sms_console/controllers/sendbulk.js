@@ -76,6 +76,7 @@ export async function errorBatch(req, res) {
 }
 
 export async function successfulBatch(req, res) {
+    console.time(`dlrsaved-${req.params.bid}`);
     console.log("logged successfulBatch");
     try {
         let confirm = req.query;
@@ -85,10 +86,14 @@ export async function successfulBatch(req, res) {
 
         let msgID = confirm.statusText.substr(9).slice(0, -1);
         console.log(msgID);
+        console.time(`readResultFromLog-${req.params.bid}`);
 
         let output = execSync(`python3 ${pathToChecker}check.py -i ${msgID}`);
         output = JSON.parse(output);
         console.log("output:- ", output);
+        console.timeEnd(`readResultFromLog-${req.params.bid}`);
+
+        console.time(`write-to-db-${req.params.bid}`);
         //TODO: currently only support static msg
         await bulkSMSService.updateBulkSMSQueue({
             queueId: msgID,
@@ -100,6 +105,7 @@ export async function successfulBatch(req, res) {
             description: confirm.statusText,
             content: confirm.batchId
         });
+        console.timeEnd(`write-to-db-${req.params.bid}`);
 
         if (output.down)
             console.log('Error Occured', {
@@ -110,6 +116,8 @@ export async function successfulBatch(req, res) {
                 phone: confirm.to,
                 content: confirm.batchId
             });
+    console.timeEnd(`dlrsaved-${req.params.bid}`);
+
         res.end("ACK/Jasmin")
 
     } catch (error) {

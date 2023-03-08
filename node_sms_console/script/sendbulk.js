@@ -20,7 +20,7 @@ let contacts = [];
 
 let total = 0;
 let progress = config.progress;
-const chunck = 5;
+const chunck = 100;
 
 function sendSMS() {
     console.time('sendSMS');
